@@ -1,0 +1,7 @@
+
+<h2>SEGURO QUE QUIERES BORRAR ESTE ARTICULO?</h2>
+<form method="POST" action="">
+	{% csrf_token %}
+<input type="submit" value="Confirmar" />
+<a href="{{ object.get_absolute_url }}" class="button">Cancelar</a>
+</form>

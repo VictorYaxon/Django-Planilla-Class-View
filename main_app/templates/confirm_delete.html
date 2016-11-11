@@ -1,0 +1,6 @@
+<h2>Seguro que deseas eliminar este objeto?</h2>
+<form method="POST" action="">
+	{% csrf_token %}
+<input type="submit" value="Confirmar" />
+<a href="{{ object.get_absolute_url }}"</a>
+</form>
